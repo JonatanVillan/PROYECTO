@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unbounded", cursive;
+}
+
+.nav-dropdown {
+  background-color: #072e09;
+}
+
+.dropdown-menu {
+  background-color: #227028;
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  background-color: #277c2e;
+}
+/*ESTILOS DEL NAV ORIGINAL*/
+nav {
+  background-color: #227028;
+  height: 70px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-logo {
+  height: 250px;
+}
+
+/*ESTILOS DEL NAV ORIGINAL*/
+/*.menu {
+  width: 600px;
+  text-align: center;
+}
+
+.links-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}*/
+
+header {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.img-header {
+  width: 400px;
+  height: 400px;
+}
+
+.presentacion {
+  text-align: center;
+  width: 500px;
+}
+
+.div-saludo {
+  margin-bottom: 20px;
+}
+
+.sobre-mi {
+  text-align: center;
+  /*lleva un color de fondo o imagen, no lo defino aun*/
+}
+
+.sobre-mi p {
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+/*ACA EMPIEZO A PROBAR GRID PARA LOS SKILLS
+
+.skills-gridconteiner {
+  display: grid;
+  grid-template-areas:
+    "titulo html"
+    "titulo css"
+    "titulo js"
+    "titulo reacjs";
+}
+
+.titulo h3{
+  position: relative;
+  left: 120px;
+  top: 850px;
+}
+
+.titulo {
+  grid-area: titulo;
+  background-color: green;
+  font-size: 50px;
+}
+
+.skills-img{
+  height: 500px;
+  padding: 20px;
+  border-left: #000 solid 6px
+}
+
+.html {
+  grid-area: html;
+  background-color: red;
+}
+
+.css {
+  grid-area: css;
+  background-color: blue;
+}
+
+.js {
+  grid-area: js;
+  background-color: yellow;
+}
+
+.reactjs {
+  grid-area: reacjs;
+  background-color: pink;
+}*/
+.skills-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.skills-titulo {
+  font-size: 50px;
+  position: relative;
+  right: 100px;
+}
+
+.skils-contenedor {
+  border-left: #000 solid 5px;
+}
+
+.skills-img{
+  object-fit: contain;
+  padding: 10px;
+}
+
+/*.skills-img img {
+  height: 150px;
+  margin: 20px;
+  left: -400px;
+}*/
+
+.skills-img:hover {
+  background-color: #0bcc35;
+}
+
+form {
+  position: relative;
+  left: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 600px;
+  background-color: #0c8a27;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-style {
+  width: 100%;
+  height: 20px;
+  background-color: #d8f3d8;
+  border-radius: 10px;
+  border: none;
+}
+
+.button-contac {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10%;
+  width: 80px;
+  border: none;
+  background-color: #3c4b42;
+  color: #031804;
+  margin-left: 650px;
+}
+
+.redes-main {
+  background-color: #0bcc35;
+  height: 100px;
+}
+
+.redes-titulo {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.img-redes {
+  width: 80px;
+  height: 80px;
+}
+
+.redes-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #5573d3;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+@media screen and (max-width: 320px) {
+  nav{
+    justify-content:space-evenly;
+  }
+
+  .nav-logo{
+    height: 150px;
+  }
+
+
+  .img-header {
+    width: 250px;
+    height: 250px;
+  }
+
+  main h2{
+    font-size: 25px;
+  }
+
+  .skills-main{
+    flex-wrap: wrap;
+  }
+
+  .skils-contenedor{
+    display: none;
+  }
+
+  .skills-titulo{
+    right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-mq{
+    display: block;
+  }
+
+  .skills-names{
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    background-color: #0bcc35;
+    border: #000 solid 3px;
+  }
+
+  .skills-names:hover{
+    background-color: #09ac2c;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (min-width: 320px){
+  .img-header {
+    height: auto;
+  }
+
+  .skills-mq{
+    display: none;
+  }
+}
