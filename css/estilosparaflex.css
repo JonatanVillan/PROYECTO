@@ -147,8 +147,8 @@ main h2 {
   padding: 20px;
 }
 
-.skills-titulo {
-  font-size: 50px;
+.skills-titulo h3{
+  font-size: 100px;
   position: relative;
   right: 100px;
 }
@@ -273,8 +273,9 @@ footer {
     display: none;
   }
 
-  .skills-titulo{
+  .skills-titulo h3{
     right: 0;
+    font-size: 30px;
     justify-content: center;
     align-items: center;
   }
