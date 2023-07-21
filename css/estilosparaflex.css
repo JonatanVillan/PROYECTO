@@ -156,7 +156,7 @@ main h2 {
 
 /*ACA TERMINA GRID*/
 
-.skills-main {
+/*.skills-main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,11 +180,17 @@ main h2 {
 
 .skills-img:hover {
   background-color: #0bcc35;
+}*/
+
+.main-form{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 form {
-  position: relative;
-  left: 390px;
+  /*position: relative;
+  left: 390px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,16 +222,17 @@ label {
   border: none;
 }
 
-.button-contac {
-  margin-bottom: 20px;
-  margin-top: 20px;
+.form-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
   padding: 10px;
   border-radius: 10%;
-  width: 80px;
+  width:fit-content;
   border: none;
   background-color: #3c4b42;
   color: #031804;
-  margin-left: 650px;
 }
 
 .redes-main {
@@ -239,8 +246,8 @@ label {
 }
 
 .img-redes {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .redes-conteiner {
@@ -249,12 +256,12 @@ label {
   align-items: center;
 }
 
-.redes-movile {
+/*.redes-movile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 footer {
   background-color: #5573d3;
@@ -318,15 +325,18 @@ footer {
     cursor: pointer;
   }*/
 
-  .redes-main {
-    display: none;
-  }
+  .img-redes {
+  width: 40px;
+  height: 40px;
+}
 
-  .redes-movile {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
+.img-redes:hover{
+
+}
+
+.redes-main{
+  height: auto;
+}
 }
 
 @media screen and (min-width: 381px) {
