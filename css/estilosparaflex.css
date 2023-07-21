@@ -7,7 +7,6 @@
   font-family: "Unbounded", cursive;
 }
 
-
 .nav-dropdown {
   background-color: #072e09;
 }
@@ -97,10 +96,8 @@ main h2 {
 
 .ms-main {
   display: grid;
-  height: 70vh;
   gap: 1rem;
   margin: 1rem;
-  grid-template-rows: repeat(5, 30%);
   grid-template-areas:
     "titulo"
     "html"
@@ -109,17 +106,28 @@ main h2 {
     "reacjs";
 }
 
-.myskills-titulo h2{
+.myskills-titulo h2 {
   justify-content: center;
   text-align: center;
 }
 
-.ms-main div img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: #000 3px solid;
+.main-grid-img {
+  width: 100px;
 }
+.myskills-html img {
+  justify-content: center;
+}
+
+.ms-main .myskills-html,
+.myskills-css,
+.myskills-js,
+.myskills-reactjs {
+  /*width: 100%;*/
+  border: #000 3px solid;
+  display: flex;
+  justify-content: center;
+}
+
 .titulo {
   grid-area: titulo;
   background-color: green;
@@ -146,7 +154,7 @@ main h2 {
   background-color: pink;
 }
 
-/*ACA TERMINA GRID*/ 
+/*ACA TERMINA GRID*/
 
 .skills-main {
   display: flex;
@@ -155,7 +163,7 @@ main h2 {
   padding: 20px;
 }
 
-.skills-titulo h3{
+.skills-titulo h3 {
   font-size: 100px;
   position: relative;
   right: 100px;
@@ -165,7 +173,7 @@ main h2 {
   border-left: #000 solid 5px;
 }
 
-.skills-img{
+.skills-img {
   object-fit: contain;
   padding: 10px;
 }
@@ -241,7 +249,7 @@ label {
   align-items: center;
 }
 
-.redes-movile{
+.redes-movile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,15 +264,15 @@ footer {
 }
 
 @media (max-width: 380px) {
-  nav{
-    justify-content:space-evenly;
+  nav {
+    justify-content: space-evenly;
   }
 
-  .nav-logo{
+  .nav-logo {
     height: 150px;
   }
 
-  .dropdown{
+  .dropdown {
     display: block;
   }
 
@@ -273,7 +281,7 @@ footer {
     height: 250px;
   }
 
-  main h2{
+  /*main h2{
     font-size: 25px;
   }
 
@@ -308,33 +316,64 @@ footer {
     background-color: #09ac2c;
     color: #ffffff;
     cursor: pointer;
-  }
+  }*/
 
-  .redes-main{
+  .redes-main {
     display: none;
   }
 
-  .redes-movile{
+  .redes-movile {
     display: block;
     justify-content: center;
     align-items: center;
   }
 }
 
-@media screen and (max-width: 768px){
-  .menu{
-    display: none;
+@media screen and (min-width: 381px) {
+  .ms-main {
+    display: grid;
+    grid-template-areas:
+      "titulo html"
+      "titulo css"
+      "titulo js"
+      "titulo reacjs";
   }
 
-  
+  .myskills-titulo h2 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-grid-img {
+    width: 200px;
+    margin: 5px;
+  }
+
+  .ms-main .myskills-html,
+  .myskills-css,
+  .myskills-js,
+  .myskills-reactjs {
+    border: none;
+  }
+
+  .ms-main .myskills-html:hover, 
+  .myskills-css:hover, 
+  .myskills-js:hover, 
+  .myskills-reactjs:hover {
+    box-shadow: 6px 5px 5px  rgb(167, 157, 157);
+  }
 }
 
-@media screen and (min-width: 767px){
-  .dropdown{
+@media screen and (max-width: 768px) {
+  .menu {
     display: none;
   }
+}
 
-  
+@media screen and (min-width: 767px) {
+  .dropdown {
+    display: none;
+  }
 }
 
 /*@media screen and (min-width: 1024px){
@@ -342,7 +381,3 @@ footer {
     display: none;
   }
 }*/
-
-@media screen and (max-width: 1024px){
-  
-}
