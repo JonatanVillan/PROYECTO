@@ -7,6 +7,8 @@
   font-family: "Unbounded", cursive;
 }
 
+/*ESTILOS DEL MENU HAMBURGUESA*/ 
+
 .nav-dropdown {
   background-color: #072e09;
 }
@@ -20,10 +22,16 @@
   color: #ffffff;
 }
 
+.dropdown ul li a:hover{
+  color: #000;
+}
+
 .dropdown-item:hover {
   background-color: #277c2e;
 }
-/*ESTILOS DEL NAV ORIGINAL*/
+
+/*ESTILOS DEL NAV PANTALLAS GRANDES*/
+
 nav {
   background-color: #227028;
   height: 70px;
@@ -37,7 +45,6 @@ nav {
   height: 250px;
 }
 
-/*ESTILOS DEL NAV ORIGINAL*/
 .menu {
   width: 600px;
   text-align: center;
@@ -54,8 +61,13 @@ a {
   color: #000;
 }
 
+a:hover{
+  color: #3a3a3a;
+}
+
+/*ACA TERMINA EL NAV*/
+
 header {
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -83,15 +95,14 @@ header {
   /*lleva un color de fondo o imagen, no lo defino aun*/
 }
 
-.sobre-mi p {
-  margin-bottom: 20px;
-}
-
 main h2 {
   font-size: 40px;
   padding-bottom: 20px;
 }
 
+.sobre-mi p {
+  margin-bottom: 20px;
+}
 /*ACA EMPIEZO A PROBAR GRID PARA LOS SKILLS*/
 
 .ms-main {
@@ -126,6 +137,7 @@ main h2 {
   border: #000 3px solid;
   display: flex;
   justify-content: center;
+  transition: 2s
 }
 
 .titulo {
@@ -182,7 +194,7 @@ main h2 {
   background-color: #0bcc35;
 }*/
 
-.main-form{
+.main-form {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -212,6 +224,7 @@ input {
 label {
   display: flex;
   flex-direction: column;
+  text-align: start;
 }
 
 .input-style {
@@ -229,10 +242,14 @@ label {
   margin-top: 10px;
   padding: 10px;
   border-radius: 10%;
-  width:fit-content;
+  width: fit-content;
   border: none;
   background-color: #3c4b42;
   color: #031804;
+}
+
+.form-button:hover{
+  background-color: #43534a;
 }
 
 .redes-main {
@@ -326,17 +343,13 @@ footer {
   }*/
 
   .img-redes {
-  width: 40px;
-  height: 40px;
-}
+    width: 40px;
+    height: 40px;
+  }
 
-.img-redes:hover{
-
-}
-
-.redes-main{
-  height: auto;
-}
+  .redes-main {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 381px) {
@@ -366,11 +379,12 @@ footer {
     border: none;
   }
 
-  .ms-main .myskills-html:hover, 
-  .myskills-css:hover, 
-  .myskills-js:hover, 
+  .ms-main .myskills-html:hover,
+  .myskills-css:hover,
+  .myskills-js:hover,
   .myskills-reactjs:hover {
-    box-shadow: 6px 5px 5px  rgb(167, 157, 157);
+    box-shadow: 6px 5px 5px rgb(167, 157, 157);
+    transition: 2s;
   }
 }
 
