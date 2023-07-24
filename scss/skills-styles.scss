@@ -1,0 +1,41 @@
+.ms-main {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem;
+  grid-template-areas:
+    "titulo"
+    "html"
+    "css"
+    "js"
+    "reacjs";
+  .myskills-titulo {
+    grid-area: titulo;
+    font-size: 50px;
+    h2 {
+      justify-content: center;
+      text-align: center;
+    }
+    div .main-grid-img {
+      width: 100px;
+    }
+  }
+
+  @extend %grid-skills;
+
+  .myskills-html {
+    grid-area: html;
+    background-color: red;
+  }
+  .myskills-css {
+    grid-area: css;
+    background-color: blue;
+  }
+  .myskills-js {
+    grid-area: js;
+    background-color: yellow;
+  }
+  .myskills-reactjs {
+    grid-area: reacjs;
+    background-color: pink;
+  }
+}

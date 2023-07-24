@@ -1,66 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap");
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Unbounded", cursive;
-}
 
-//NAV
-
-nav {
-  background-color: #227028;
-  height: 70px;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  div {
-    .nav-logo {
-      height: 250px;
+  nav {
+    background-color: #227028;
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div {
+      .nav-logo {
+        height: 250px;
+      }
     }
-  }
-  .menu {
-    width: 600px;
-    text-align: center;
-    .links-menu {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
-      a {
+    .menu {
+      width: 600px;
+      text-align: center;
+      .links-menu {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+        a:hover {
+          color: #3a3a3a;
+        }
+      }
+    }
+    .dropdown {
+      background-color: #072e09;
+      border-radius: 20px;
+      .dropdown-menu {
+        background-color: #227028;
+      }
+      ul li a {
         text-decoration: none;
+        color: #ffffff;
+      }
+      ul li a:hover {
         color: #000;
       }
-      a:hover {
-        color: #3a3a3a;
+      ul li .dropdown-item:hover {
+        background-color: #277c2e;
+      }
+      .nav-dropdown {
+        background-color: #072e09;
+      }
+      .btn-secondary {
+        border: #072e09;
+      }
+      .nav-dropdown:hover {
+        background-color: #0b5e0d;
       }
     }
   }
-  .dropdown {
-    background-color: #072e09;
-    border-radius: 20px;
-    .dropdown-menu {
-      background-color: #227028;
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f6853;
+    .img-header {
+      width: 350px;
     }
-    ul li a {
-      text-decoration: none;
-      color: #ffffff;
-    }
-    ul li a:hover {
-      color: #000;
-    }
-    ul li .dropdown-item:hover {
-      background-color: #277c2e;
-    }
-    .nav-dropdown{
-        background-color: #072e09;
-    }
-    .btn-secondary{
-        border: #072e09;
-    }
-    .nav-dropdown:hover{
-        background-color: #0b5e0d ;
+    .presentacion-header {
+      text-align: center;
+      width: 500px;
+      .saludo-header {
+        margin-bottom: 20px;
+      }
     }
   }
+  footer {
+    background-color: #5573d3;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+
+  @import"sobremi-styles.scss";
+  @import"skills-styles.scss";
+  @import"contacto.scss";
 }
+

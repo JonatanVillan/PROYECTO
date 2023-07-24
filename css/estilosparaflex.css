@@ -4,43 +4,135 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Unbounded", cursive; }
-
-nav {
-  background-color: #227028;
-  height: 70px;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-  nav div .nav-logo {
-    height: 250px; }
-  nav .menu {
-    width: 600px;
-    text-align: center; }
-    nav .menu .links-menu {
-      display: flex;
-      justify-content: space-around;
-      list-style: none; }
-      nav .menu .links-menu a {
+  * nav {
+    background-color: #227028;
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    * nav div .nav-logo {
+      height: 250px; }
+    * nav .menu {
+      width: 600px;
+      text-align: center; }
+      * nav .menu .links-menu {
+        display: flex;
+        justify-content: space-around;
+        list-style: none; }
+        * nav .menu .links-menu a {
+          text-decoration: none;
+          color: #000; }
+        * nav .menu .links-menu a:hover {
+          color: #3a3a3a; }
+    * nav .dropdown {
+      background-color: #072e09;
+      border-radius: 20px; }
+      * nav .dropdown .dropdown-menu {
+        background-color: #227028; }
+      * nav .dropdown ul li a {
         text-decoration: none;
+        color: #ffffff; }
+      * nav .dropdown ul li a:hover {
         color: #000; }
-      nav .menu .links-menu a:hover {
-        color: #3a3a3a; }
-  nav .dropdown {
-    background-color: #072e09;
-    border-radius: 20px; }
-    nav .dropdown .dropdown-menu {
-      background-color: #227028; }
-    nav .dropdown ul li a {
-      text-decoration: none;
-      color: #ffffff; }
-    nav .dropdown ul li a:hover {
-      color: #000; }
-    nav .dropdown ul li .dropdown-item:hover {
-      background-color: #277c2e; }
-    nav .dropdown .nav-dropdown {
-      background-color: #072e09; }
-    nav .dropdown .btn-secondary {
-      border: #072e09; }
-    nav .dropdown .nav-dropdown:hover {
-      background-color: #0b5e0d; }
+      * nav .dropdown ul li .dropdown-item:hover {
+        background-color: #277c2e; }
+      * nav .dropdown .nav-dropdown {
+        background-color: #072e09; }
+      * nav .dropdown .btn-secondary {
+        border: #072e09; }
+      * nav .dropdown .nav-dropdown:hover {
+        background-color: #0b5e0d; }
+  * header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f6853; }
+    * header .img-header {
+      width: 350px; }
+    * header .presentacion-header {
+      text-align: center;
+      width: 500px; }
+      * header .presentacion-header .saludo-header {
+        margin-bottom: 20px; }
+  * footer {
+    background-color: #5573d3;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 2px; }
+  * .sobre-mi {
+    text-align: center; }
+    * .sobre-mi h2 {
+      font-size: 40px;
+      padding-bottom: 20px;
+      padding-top: 10px; }
+    * .sobre-mi p {
+      margin-bottom: 20px; }
+  * .ms-main {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    grid-template-areas: "titulo" "html" "css" "js" "reacjs"; }
+    * .ms-main .myskills-titulo {
+      grid-area: titulo;
+      font-size: 50px; }
+      * .ms-main .myskills-titulo h2 {
+        justify-content: center;
+        text-align: center; }
+      * .ms-main .myskills-titulo div .main-grid-img {
+        width: 100px; }
+    * .ms-main .myskills-html {
+      grid-area: html;
+      background-color: red; }
+    * .ms-main .myskills-css {
+      grid-area: css;
+      background-color: blue; }
+    * .ms-main .myskills-js {
+      grid-area: js;
+      background-color: yellow; }
+    * .ms-main .myskills-reactjs {
+      grid-area: reacjs;
+      background-color: pink; }
+  * main .main-form {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    * main .main-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      width: 600px;
+      background-color: #0c8a27;
+      border-radius: 20px;
+      margin-bottom: 20px; }
+      * main .main-form form label {
+        display: flex;
+        flex-direction: column;
+        text-align: start; }
+        * main .main-form form label input {
+          width: 80%;
+          padding: 12px 20px;
+          margin: 5px 0;
+          box-sizing: border-box; }
+          * main .main-form form label input .input-style {
+            width: 100%;
+            height: 20px;
+            background-color: #d8f3d8;
+            border-radius: 10px;
+            border: none; }
+      * main .main-form form .form-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10%;
+        width: fit-content;
+        border: none;
+        background-color: #3c4b42;
+        color: #031804; }
+      * main .main-form form .form-button:hover {
+        background-color: #43534a; }
