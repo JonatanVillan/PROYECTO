@@ -1,4 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap");
+.sobre-mi {
+  text-align: center; }
+  .sobre-mi h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px; }
+  .sobre-mi p {
+    margin-bottom: 20px; }
+
+.main-form {
+  padding-top: 20px;
+  background-color: #031804; }
+  .main-form .contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-form .contenedor-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      width: 600px;
+      background-color: #0c8a27;
+      border-radius: 20px;
+      margin-bottom: 20px; }
+      .main-form .contenedor-form form label {
+        display: flex;
+        flex-direction: column;
+        text-align: start; }
+        .main-form .contenedor-form form label input {
+          width: 80%;
+          padding: 12px 20px;
+          margin: 5px 0;
+          box-sizing: border-box; }
+        .main-form .contenedor-form form label .input-style {
+          width: 100%;
+          height: 20px;
+          background-color: #d8f3d8;
+          border-radius: 10px;
+          border: none; }
+      .main-form .contenedor-form form .form-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10%;
+        width: fit-content;
+        border: none;
+        background-color: #3c4b42;
+        color: #031804; }
+      .main-form .contenedor-form form .form-button:hover {
+        background-color: #43534a; }
+
+.redes-main {
+  background-color: #0bcc35;
+  height: 100px; }
+  .redes-main div .redes-titulo {
+    text-align: center;
+    margin-bottom: 0; }
+  .redes-main div .redes-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .redes-main div .redes-conteiner .img-redes {
+      width: 70px;
+      height: 70px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -61,78 +130,3 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 2px; }
-  * .sobre-mi {
-    text-align: center; }
-    * .sobre-mi h2 {
-      font-size: 40px;
-      padding-bottom: 20px;
-      padding-top: 10px; }
-    * .sobre-mi p {
-      margin-bottom: 20px; }
-  * .ms-main {
-    display: grid;
-    gap: 1rem;
-    margin: 1rem;
-    grid-template-areas: "titulo" "html" "css" "js" "reacjs"; }
-    * .ms-main .myskills-titulo {
-      grid-area: titulo;
-      font-size: 50px; }
-      * .ms-main .myskills-titulo h2 {
-        justify-content: center;
-        text-align: center; }
-      * .ms-main .myskills-titulo div .main-grid-img {
-        width: 100px; }
-    * .ms-main .myskills-html {
-      grid-area: html;
-      background-color: red; }
-    * .ms-main .myskills-css {
-      grid-area: css;
-      background-color: blue; }
-    * .ms-main .myskills-js {
-      grid-area: js;
-      background-color: yellow; }
-    * .ms-main .myskills-reactjs {
-      grid-area: reacjs;
-      background-color: pink; }
-  * main .main-form {
-    display: flex;
-    justify-content: center;
-    text-align: center; }
-    * main .main-form form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 400px;
-      width: 600px;
-      background-color: #0c8a27;
-      border-radius: 20px;
-      margin-bottom: 20px; }
-      * main .main-form form label {
-        display: flex;
-        flex-direction: column;
-        text-align: start; }
-        * main .main-form form label input {
-          width: 80%;
-          padding: 12px 20px;
-          margin: 5px 0;
-          box-sizing: border-box; }
-          * main .main-form form label input .input-style {
-            width: 100%;
-            height: 20px;
-            background-color: #d8f3d8;
-            border-radius: 10px;
-            border: none; }
-      * main .main-form form .form-button {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 10%;
-        width: fit-content;
-        border: none;
-        background-color: #3c4b42;
-        color: #031804; }
-      * main .main-form form .form-button:hover {
-        background-color: #43534a; }

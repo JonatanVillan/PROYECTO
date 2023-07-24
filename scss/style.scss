@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap");
-
-
+@import"sobremi-styles.scss";
+@import"contacto.scss";
+@import"mis-redes.scss";
 
 * {
   margin: 0;
@@ -87,9 +88,5 @@
     padding-top: 10px;
     padding-bottom: 2px;
   }
-
-  @import"sobremi-styles.scss";
-  @import"skills-styles.scss";
-  @import"contacto.scss";
 }
 

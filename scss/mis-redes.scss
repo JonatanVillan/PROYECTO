@@ -1,0 +1,19 @@
+.redes-main {
+  background-color: #0bcc35;
+  height: 100px;
+  div {
+    .redes-titulo {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .redes-conteiner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img-redes {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
