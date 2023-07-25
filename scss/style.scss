@@ -1,92 +1,226 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap");
-@import"sobremi-styles.scss";
-@import"contacto.scss";
-@import"mis-redes.scss";
+@import "sobremi-styles.scss";
+@import "contacto.scss";
+@import "mis-redes.scss";
+@import "skills.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Unbounded", cursive;
+}
 
+nav {
+  background-color: #227028;
+  height: 70px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  div {
+    .nav-logo {
+      height: 250px;
+    }
+  }
+  .menu {
+    width: 600px;
+    text-align: center;
+    .links-menu {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      a:hover {
+        color: #3a3a3a;
+      }
+    }
+  }
+  .dropdown {
+    background-color: #072e09;
+    border-radius: 20px;
+    .dropdown-menu {
+      background-color: #227028;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    ul li a:hover {
+      color: #000;
+    }
+    ul li .dropdown-item:hover {
+      background-color: #277c2e;
+    }
+    .nav-dropdown {
+      background-color: #072e09;
+    }
+    .btn-secondary {
+      border: #072e09;
+    }
+    .nav-dropdown:hover {
+      background-color: #0b5e0d;
+    }
+  }
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3f6853;
+  .img-header {
+    width: 350px;
+  }
+  .presentacion-header {
+    text-align: center;
+    width: 500px;
+    .saludo-header {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+footer {
+  background-color: #5573d3;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+@media (max-width: 380px) {
   nav {
-    background-color: #227028;
-    height: 70px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     div {
-      .nav-logo {
-        height: 250px;
+      a {
+        .nav-logo {
+          height: 150px;
+        }
       }
     }
     .menu {
-      width: 600px;
-      text-align: center;
-      .links-menu {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: #000;
-        }
-        a:hover {
-          color: #3a3a3a;
-        }
-      }
+      display: none;
     }
     .dropdown {
-      background-color: #072e09;
-      border-radius: 20px;
-      .dropdown-menu {
-        background-color: #227028;
-      }
-      ul li a {
-        text-decoration: none;
-        color: #ffffff;
-      }
-      ul li a:hover {
-        color: #000;
-      }
-      ul li .dropdown-item:hover {
-        background-color: #277c2e;
-      }
-      .nav-dropdown {
-        background-color: #072e09;
-      }
-      .btn-secondary {
-        border: #072e09;
-      }
-      .nav-dropdown:hover {
-        background-color: #0b5e0d;
-      }
+      display: block;
     }
   }
-
   header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3f6853;
-    .img-header {
-      width: 350px;
-    }
-    .presentacion-header {
-      text-align: center;
-      width: 500px;
-      .saludo-header {
-        margin-bottom: 20px;
+    div {
+      .img-header {
+        width: 250px;
       }
     }
   }
-  footer {
-    background-color: #5573d3;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 2px;
+  .ms-main{
+    .main-grid-img{
+      width: 50%;
+    }
+  }
+  .redes-main {
+    height: auto;
+    .redes-conteiner {
+      a {
+        .img-redes {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .main-form{
+      .contenedor-form{
+        form{
+          width: 75%;
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 381px) {
+  .main-form{
+      .contenedor-form{
+        form{
+          width: 75%;
+        }
+      }
+  }
+  .ms-main {
+    display: grid;
+    grid-template-areas:
+      "titulo html"
+      "titulo css"
+      "titulo js"
+      "titulo reacjs";
+    .myskills-html {
+      border: none;
+    }
+    .myskills-css {
+      border: none;
+    }
+    .myskills-js {
+      border: none;
+    }
+    .myskills-reactjs {
+      border: none;
+    }
+    .myskills-html:hover {
+      box-shadow: 6px 5px 5px rgb(167, 157, 157);
+      transition: 1.5s;
+    }
+    .myskills-css:hover {
+      box-shadow: 6px 5px 5px rgb(167, 157, 157);
+      transition: 1.5s;
+    }
+    .myskills-js:hover {
+      box-shadow: 6px 5px 5px rgb(167, 157, 157);
+      transition: 1.5s;
+    }
+    .myskills-reactjs:hover {
+      box-shadow: 6px 5px 5px rgb(167, 157, 157);
+      transition: 1.5s;
+    }
+    .myskills-titulo {
+      h2 {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    div {
+      .main-grid-img {
+        width: 200px;
+        margin: 5px;
+      }
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+      .menu{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px){
+    nav{
+      .dropdown{
+        display: none;
+      }
+    }
+
+    //chequear
+    .main-form{
+      .contenedor-form{
+        form{
+          width: 50%;
+        }
+      }
   }
 }
 

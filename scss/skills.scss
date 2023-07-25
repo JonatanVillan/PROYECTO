@@ -19,22 +19,35 @@
       width: 100px;
     }
   }
-  @extend %grid-skills;
-
   .myskills-html {
     grid-area: html;
     background-color: red;
+    @extend %grid-skills;
   }
   .myskills-css {
     grid-area: css;
     background-color: blue;
+    @extend %grid-skills;
   }
   .myskills-js {
     grid-area: js;
     background-color: yellow;
+    @extend %grid-skills;
   }
   .myskills-reactjs {
     grid-area: reacjs;
     background-color: pink;
+    @extend %grid-skills;
   }
+}
+
+%grid-skills {
+  border: #000 3px solid;
+  display: flex;
+  justify-content: center;
+  transition: 2s;
+}
+%sobras {
+  box-shadow: 6px 5px 5px rgb(167, 157, 157);
+  transition: 2s;
 }
