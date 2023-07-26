@@ -3,6 +3,7 @@
 @import "contacto.scss";
 @import "mis-redes.scss";
 @import "skills.scss";
+@import "./utilities/extras.scss";
 
 * {
   margin: 0;
@@ -12,7 +13,7 @@
 }
 
 nav {
-  background-color: #227028;
+  background-color: $color-cuatro;
   height: 70px;
   width: auto;
   display: flex;
@@ -32,37 +33,37 @@ nav {
       list-style: none;
       a {
         text-decoration: none;
-        color: #000;
+        color: $color-uno;
       }
       a:hover {
-        color: #3a3a3a;
+        color: $color-tres;
       }
     }
   }
   .dropdown {
-    background-color: #072e09;
+    background-color: $color-dos;
     border-radius: 20px;
     .dropdown-menu {
-      background-color: #227028;
+      background-color: $color-cuatro;
     }
     ul li a {
       text-decoration: none;
-      color: #ffffff;
+      color: $color-texto;
     }
     ul li a:hover {
-      color: #000;
+      color: $color-uno;
     }
     ul li .dropdown-item:hover {
-      background-color: #277c2e;
+      background-color: $color-hover;
     }
     .nav-dropdown {
-      background-color: #072e09;
+      background-color: $color-dos;
     }
     .btn-secondary {
-      border: #072e09;
+      border: $color-dos;
     }
     .nav-dropdown:hover {
-      background-color: #0b5e0d;
+      background-color: $color-tres;
     }
   }
 }
@@ -72,7 +73,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #3f6853;
+  background-color: $header-color;
   .img-header {
     width: 350px;
   }
@@ -86,7 +87,7 @@ header {
 }
 
 footer {
-  background-color: #5573d3;
+  background-color: $color-cinco;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 2px;
@@ -116,8 +117,8 @@ footer {
       }
     }
   }
-  .ms-main{
-    .main-grid-img{
+  .ms-main {
+    .main-grid-img {
       width: 50%;
     }
   }
@@ -132,22 +133,22 @@ footer {
       }
     }
   }
-  .main-form{
-      .contenedor-form{
-        form{
-          width: 75%;
-        }
+  .main-form {
+    .contenedor-form {
+      form {
+        width: 75%;
       }
+    }
   }
 }
 
 @media screen and (min-width: 381px) {
-  .main-form{
-      .contenedor-form{
-        form{
-          width: 75%;
-        }
+  .main-form {
+    .contenedor-form {
+      form {
+        width: 75%;
       }
+    }
   }
   .ms-main {
     display: grid;
@@ -196,31 +197,30 @@ footer {
         margin: 5px;
       }
     }
-}
+  }
 
-@media screen and (max-width: 768px){
-    nav{
-      .menu{
+  @media screen and (max-width: 768px) {
+    nav {
+      .menu {
         display: none;
       }
     }
   }
 }
 
-@media screen and (min-width: 767px){
-    nav{
-      .dropdown{
-        display: none;
+@media screen and (min-width: 767px) {
+  nav {
+    .dropdown {
+      display: none;
+    }
+  }
+
+  //chequear
+  .main-form {
+    .contenedor-form {
+      form {
+        width: 50%;
       }
     }
-
-    //chequear
-    .main-form{
-      .contenedor-form{
-        form{
-          width: 50%;
-        }
-      }
   }
 }
-
