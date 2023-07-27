@@ -10,7 +10,8 @@
 
 .main-form {
   padding-top: 20px;
-  background-color: #0c8a27; }
+  background: #058c42;
+  background: linear-gradient(180deg, #058c42 26%, #16db65 98%); }
   .main-form .contenedor-form {
     display: flex;
     justify-content: center;
@@ -22,8 +23,8 @@
       justify-content: center;
       height: 400px;
       width: 600px;
-      background-color: #0c8a27;
-      border: #3c4b42 solid 2px;
+      background-color: #058c42;
+      border: #3f6853 solid 2px;
       border-radius: 20px;
       margin-bottom: 20px; }
       .main-form .contenedor-form form label {
@@ -53,7 +54,24 @@
         background-color: #3c4b42;
         color: #031804; }
       .main-form .contenedor-form form .form-button:hover {
-        background-color: #43534a; }
+        background-color: #43534a;
+        cursor: pointer; }
+  .main-form .wsp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    transition: 2s ease; }
+  .main-form .img-wsp {
+    position: fixed;
+    width: 30px;
+    bottom: 35px;
+    right: 35px; }
 
 .redes-main {
   background-color: #0bcc35;
@@ -162,7 +180,7 @@ header {
       margin-bottom: 20px; }
 
 footer {
-  background-color: #16db65;
+  background-color: #3f6853;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 2px; }
