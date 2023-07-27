@@ -74,7 +74,7 @@
     right: 35px; }
 
 .redes-main {
-  background-color: #0bcc35;
+  background-color: #058c42;
   height: 100px; }
   .redes-main div .redes-titulo {
     text-align: center;
@@ -85,7 +85,11 @@
     align-items: center; }
     .redes-main div .redes-conteiner .img-redes {
       width: 70px;
-      height: 70px; }
+      height: 70px;
+      transition: 2s; }
+    .redes-main div .redes-conteiner .img-redes:hover {
+      transform: scale(1.2);
+      transition: 2s; }
 
 .ms-main {
   display: grid;

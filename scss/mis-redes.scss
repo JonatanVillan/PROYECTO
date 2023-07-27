@@ -1,5 +1,7 @@
+@import "./utilities/extras.scss";
+
 .redes-main {
-  background-color: #0bcc35;
+  background-color: $color-cuatro;
   height: 100px;
   div {
     .redes-titulo {
@@ -13,6 +15,11 @@
       .img-redes {
         width: 70px;
         height: 70px;
+        transition: 2s;
+      }
+      .img-redes:hover{
+        transform: scale(1.2);
+        transition: 2s;
       }
     }
   }
