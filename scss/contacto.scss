@@ -8,7 +8,7 @@
     rgba(5, 140, 66, 1) 26%,
     rgba(22, 219, 101, 1) 98%
   );
-  
+
   .contenedor-form {
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@
           border: none;
         }
       }
-      
+
       .form-button {
         display: flex;
         justify-content: center;
@@ -61,6 +61,14 @@
       }
     }
   }
+  .redes-datos {
+    padding-bottom: 10px;
+    justify-content: space-around;
+      .datos {
+        justify-content: center;
+        text-align: center;
+      }
+  }
 
   .wsp {
     position: fixed;
@@ -75,7 +83,7 @@
     transition: 2s ease;
   }
 
-  .img-wsp{
+  .img-wsp {
     position: fixed;
     width: 30px;
     bottom: 35px;

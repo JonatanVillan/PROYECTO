@@ -56,6 +56,12 @@
       .main-form .contenedor-form form .form-button:hover {
         background-color: #43534a;
         cursor: pointer; }
+  .main-form .redes-datos {
+    padding-bottom: 10px;
+    justify-content: space-around; }
+    .main-form .redes-datos .datos {
+      justify-content: center;
+      text-align: center; }
   .main-form .wsp {
     position: fixed;
     width: 50px;
@@ -75,7 +81,9 @@
 
 .redes-main {
   background-color: #058c42;
-  height: 100px; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
   .redes-main div .redes-titulo {
     text-align: center;
     margin-bottom: 0; }
@@ -130,7 +138,7 @@
   font-family: "Unbounded", cursive; }
 
 nav {
-  background-color: #058c42;
+  background-color: #3f6853;
   height: 70px;
   width: auto;
   display: flex;

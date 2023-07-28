@@ -2,7 +2,9 @@
 
 .redes-main {
   background-color: $color-cuatro;
-  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   div {
     .redes-titulo {
       text-align: center;
