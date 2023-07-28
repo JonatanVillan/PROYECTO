@@ -1,7 +1,10 @@
+@import "../scss/utilities/extras.scss";
+
 .ms-main {
+  background-color: $color-uno;
   display: grid;
   gap: 1rem;
-  margin: 1rem;
+  padding: 1rem;
   grid-template-areas:
     "titulo"
     "html"
@@ -10,10 +13,12 @@
     "reacjs";
   .myskills-titulo {
     grid-area: titulo;
-    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h2 {
-      justify-content: center;
-      text-align: center;
+      font-size: 60px;
+      color: $header-color;
     }
     div .main-grid-img {
       width: 100px;

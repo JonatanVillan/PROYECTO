@@ -85,8 +85,7 @@
   justify-content: space-around;
   align-items: center; }
   .redes-main div .redes-titulo {
-    text-align: center;
-    margin-bottom: 0; }
+    text-align: center; }
   .redes-main div .redes-conteiner {
     display: flex;
     justify-content: center;
@@ -100,16 +99,19 @@
       transition: 2s; }
 
 .ms-main {
+  background-color: #020202;
   display: grid;
   gap: 1rem;
-  margin: 1rem;
+  padding: 1rem;
   grid-template-areas: "titulo" "html" "css" "js" "reacjs"; }
   .ms-main .myskills-titulo {
     grid-area: titulo;
-    font-size: 50px; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .ms-main .myskills-titulo h2 {
-      justify-content: center;
-      text-align: center; }
+      font-size: 60px;
+      color: #3f6853; }
     .ms-main .myskills-titulo div .main-grid-img {
       width: 100px; }
   .ms-main .myskills-html {
