@@ -19,6 +19,15 @@
     h2 {
       font-size: 60px;
       color: $header-color;
+      //border: 1px solid $color-cinco;
+      //padding: 5px;
+      //box-shadow: 2px 2px 10px $color-cinco;
+      text-shadow: 0 0 0px $color-cinco;
+      transition: 2s;
+    }
+    h2:hover{
+      //box-shadow: 2px 2px 20px $color-cinco;
+      text-shadow: 0 0 3px $color-cinco;
     }
     div .main-grid-img {
       width: 100px;

@@ -111,7 +111,11 @@
     align-items: center; }
     .ms-main .myskills-titulo h2 {
       font-size: 60px;
-      color: #3f6853; }
+      color: #3f6853;
+      text-shadow: 0 0 0px #16db65;
+      transition: 2s; }
+    .ms-main .myskills-titulo h2:hover {
+      text-shadow: 0 0 3px #16db65; }
     .ms-main .myskills-titulo div .main-grid-img {
       width: 100px; }
   .ms-main .myskills-html {
@@ -236,16 +240,20 @@ footer {
       border: none; }
     .ms-main .myskills-html:hover {
       box-shadow: 6px 5px 5px #a79d9d;
-      transition: 1.5s; }
+      transition: 1.5s;
+      cursor: pointer; }
     .ms-main .myskills-css:hover {
       box-shadow: 6px 5px 5px #a79d9d;
-      transition: 1.5s; }
+      transition: 1.5s;
+      cursor: pointer; }
     .ms-main .myskills-js:hover {
       box-shadow: 6px 5px 5px #a79d9d;
-      transition: 1.5s; }
+      transition: 1.5s;
+      cursor: pointer; }
     .ms-main .myskills-reactjs:hover {
       box-shadow: 6px 5px 5px #a79d9d;
-      transition: 1.5s; }
+      transition: 1.5s;
+      cursor: pointer; }
     .ms-main .myskills-titulo h2 {
       justify-content: center;
       text-align: center; }
