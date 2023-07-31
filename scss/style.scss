@@ -87,10 +87,15 @@ header {
 }
 
 footer {
+  display: flex;
+  justify-content: space-around;
   background-color: $header-color;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 2px;
+  p{
+    justify-content: center;
+  }
 }
 
 @media (max-width: 380px) {

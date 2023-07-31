@@ -5,8 +5,18 @@
     font-size: 40px;
     padding-bottom: 20px;
     padding-top: 10px; }
-  .sobre-mi p {
-    margin-bottom: 20px; }
+  .sobre-mi .sobre-mi-conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px; }
+    .sobre-mi .sobre-mi-conteiner div {
+      justify-content: center;
+      text-align: center;
+      border: 2px solid #04471c;
+      background-color: #16db65;
+      border-radius: 20px;
+      max-width: 500px; }
 
 .main-form {
   padding-top: 20px;
@@ -135,6 +145,7 @@
   border: #000 3px solid;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
   transition: 2s; }
 
 * {
@@ -198,10 +209,14 @@ header {
       margin-bottom: 20px; }
 
 footer {
+  display: flex;
+  justify-content: space-around;
   background-color: #3f6853;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 2px; }
+  footer p {
+    justify-content: center; }
 
 @media (max-width: 380px) {
   nav {

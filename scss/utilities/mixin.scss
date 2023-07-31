@@ -1,0 +1,11 @@
+//MIXIN
+@import "./extras.scss";
+
+@mixin sobre-mi {
+  justify-content: center;
+  text-align: center;
+  border: 2px solid $color-tres;
+  background-color: $color-cinco;
+  border-radius: 20px;
+  max-width: 500px;
+}

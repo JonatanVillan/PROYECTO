@@ -1,3 +1,5 @@
+@import"../scss/utilities/mixin.scss";
+
 .sobre-mi {
   text-align: center;
   h2 {
@@ -5,7 +7,14 @@
     padding-bottom: 20px;
     padding-top: 10px;
   }
-  p {
-    margin-bottom: 20px;
+  .sobre-mi-conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    div{
+      @include sobre-mi;
+    }
   }
+ 
 }
