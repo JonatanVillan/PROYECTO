@@ -195,6 +195,7 @@ nav {
       background-color: #04471c; }
 
 header {
+  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -218,7 +219,7 @@ footer {
   footer p {
     justify-content: center; }
 
-@media (max-width: 380px) {
+@media (max-width: 411px) {
   nav {
     justify-content: space-evenly; }
     nav div a .nav-logo {
@@ -229,6 +230,8 @@ footer {
       display: block; }
   header div .img-header {
     width: 250px; }
+  .ms-main .myskills-titulo h2 {
+    font-size: 30px; }
   .ms-main .main-grid-img {
     width: 50%; }
   .redes-main {
@@ -239,7 +242,7 @@ footer {
   .main-form .contenedor-form form {
     width: 75%; } }
 
-@media screen and (min-width: 381px) {
+@media screen and (min-width: 411px) {
   .main-form .contenedor-form form {
     width: 75%; }
   .ms-main {
@@ -271,14 +274,17 @@ footer {
       cursor: pointer; }
     .ms-main .myskills-titulo h2 {
       justify-content: center;
-      text-align: center; }
+      text-align: center;
+      font-size: 50px; }
     .ms-main div .main-grid-img {
       width: 200px;
       margin: 5px; } }
 
-@media screen and (min-width: 381px) and (max-width: 768px) {
+@media screen and (min-width: 411px) and (max-width: 768px) {
   nav .menu {
-    display: none; } }
+    display: none; }
+  .ms-main {
+    width: auto; } }
 
 @media screen and (min-width: 767px) {
   nav .dropdown {
