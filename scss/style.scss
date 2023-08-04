@@ -83,8 +83,9 @@ header {
     width: 500px;
     .saludo-header {
       margin-bottom: 20px;
+      transition: 2s;
     }
-    .saludo-header:hover{
+    .saludo-header:hover {
       text-shadow: 0 0 3px $color-cinco;
     }
   }
@@ -119,6 +120,7 @@ footer {
       display: block;
     }
   }
+
   header {
     div {
       .img-header {
@@ -126,15 +128,18 @@ footer {
       }
     }
   }
+
   .ms-main {
-    .myskills-titulo{
-      h2{
-      font-size: 30px;}
+    .myskills-titulo {
+      h2 {
+        font-size: 30px;
+      }
     }
     .main-grid-img {
       width: 50%;
     }
   }
+
   .redes-main {
     height: auto;
     .redes-conteiner {
@@ -146,11 +151,18 @@ footer {
       }
     }
   }
+
   .main-form {
     .contenedor-form {
       form {
         width: 75%;
       }
+    }
+  }
+
+  .sobre-mi {
+    .sobre-mi-conteiner {
+      display: block;
     }
   }
 }
@@ -224,7 +236,7 @@ footer {
         display: none;
       }
     }
-    .ms-main{
+    .ms-main {
       width: auto;
     }
   }

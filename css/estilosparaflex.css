@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap");
 .sobre-mi {
+  background-color: #020202;
   text-align: center; }
   .sobre-mi h2 {
     font-size: 40px;
     padding-bottom: 20px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    color: #058c42; }
   .sobre-mi .sobre-mi-conteiner {
     display: flex;
     justify-content: space-around;
@@ -17,6 +19,7 @@
       background-color: #16db65;
       border-radius: 20px;
       max-width: 500px;
+      padding: 5px;
       background: linear-gradient(180deg, #058c42 26%, #16db65 98%); }
 
 .main-form {
@@ -207,7 +210,8 @@ header {
     text-align: center;
     width: 500px; }
     header .presentacion-header .saludo-header {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      transition: 2s; }
     header .presentacion-header .saludo-header:hover {
       text-shadow: 0 0 3px #16db65; }
 
@@ -242,7 +246,9 @@ footer {
       width: 40px;
       height: 40px; }
   .main-form .contenedor-form form {
-    width: 75%; } }
+    width: 75%; }
+  .sobre-mi .sobre-mi-conteiner {
+    display: block; } }
 
 @media screen and (min-width: 411px) {
   .main-form .contenedor-form form {

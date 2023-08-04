@@ -2,11 +2,13 @@
 @import "../scss/utilities/extras.scss";
 
 .sobre-mi {
+  background-color: $color-uno;
   text-align: center;
   h2 {
     font-size: 40px;
     padding-bottom: 20px;
     padding-top: 10px;
+    color: $color-cuatro;
   }
   .sobre-mi-conteiner {
     display: flex;
