@@ -1,4 +1,4 @@
-@import"../scss/utilities/mixin.scss";
+@import "../scss/utilities/mixin.scss";
 @import "../scss/utilities/extras.scss";
 
 .sobre-mi {
@@ -8,14 +8,18 @@
     padding-bottom: 20px;
     padding-top: 10px;
   }
-  .sobre-mi-conteiner{
+  .sobre-mi-conteiner {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
-    div{
+    div {
       @include sobre-mi;
+      background: linear-gradient(
+        180deg,
+        rgba(5, 140, 66, 1) 26%,
+        rgba(22, 219, 101, 1) 98%
+      );
     }
   }
- 
 }
