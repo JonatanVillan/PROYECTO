@@ -202,12 +202,14 @@ header {
   align-items: center;
   background-color: #3f6853; }
   header .img-header {
-    width: 350px; }
+    width: 390px; }
   header .presentacion-header {
     text-align: center;
     width: 500px; }
     header .presentacion-header .saludo-header {
       margin-bottom: 20px; }
+    header .presentacion-header .saludo-header:hover {
+      text-shadow: 0 0 3px #16db65; }
 
 footer {
   display: flex;

@@ -76,13 +76,16 @@ header {
   align-items: center;
   background-color: $header-color;
   .img-header {
-    width: 350px;
+    width: 390px;
   }
   .presentacion-header {
     text-align: center;
     width: 500px;
     .saludo-header {
       margin-bottom: 20px;
+    }
+    .saludo-header:hover{
+      text-shadow: 0 0 3px $color-cinco;
     }
   }
 }
